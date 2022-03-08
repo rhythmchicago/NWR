@@ -1,0 +1,7 @@
+Use and interact with the Native Web Renderer on the appropriate operating system. Write your front end in HTML and the backend in blazing-fast C. I'll be implmenting Windows first, then Linux.
+
+This is a personal project that I've ended up using at work. It's current state is a semi-working demo that is largely a playground for ideas.
+
+Why would I do this? Because I saw WRY from the Tauri project, and thought: couldn't you do that just as easily in C? So, I decided to find out. Now I don't need Electron, and I don't need node.js and, more importantly, I don't need to write a plugin for Node.Js to wrap the C library from a third-party manufacturer that I need to talk with their hardware. I don't even need Visual Studio, MSVC or C++; because I'm using MSYS2, I can port it to GTK/Linux without breaking a sweat. My web interface pops up, I have a direct pipeline between my C backend and the HTML front end, I link to the third-party library and don't need to develop and debug the wrapper. Because I'm using C and COM, I don't need to worry about compiler versions or ABI compatibility. 
+
+Uses Premake because I am so fucking sick of writing CMake files that are longer than most of my code files.

@@ -1,0 +1,9 @@
+bin/
+build/
+debug/
+release/
+Debug/
+Release/
+Build/
+Bin/
+*.exe
